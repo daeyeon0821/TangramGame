@@ -51,8 +51,9 @@ public static partial class GFunc
     #region Vaild Func
     public static bool IsValid<T>(this T component_)
     {
-        bool isValid = component_.Equals(null) == false;
-        return isValid;
+        Component convert_ = (Component)(component_ as Component);
+        bool isInvalid = convert_ == null || convert_ == default;
+        return !isInvalid;
     }
     #endregion      // Vaild Func
 }

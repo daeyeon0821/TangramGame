@@ -9,6 +9,7 @@ public class PuzzlePlayPart : MonoBehaviour, IPointerDownHandler,
     private bool isClicked = false;
     private RectTransform objRect = default;
     private PuzzleInitZone puzzleInitZone = default;
+    private PlayLevel playLevel = default;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +18,9 @@ public class PuzzlePlayPart : MonoBehaviour, IPointerDownHandler,
         objRect = gameObject.GetRect();
         puzzleInitZone = transform.parent.
             gameObject.GetComponentMust<PuzzleInitZone>();
+
+        playLevel = GameManager.Instance.
+            gameObjs["Level_1"].GetComponentMust<PlayLevel>();
     }
 
     // Update is called once per frame
