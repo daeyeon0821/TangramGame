@@ -21,4 +21,6 @@ Copy mobile tangram game
 
 2023-01-31 / v0.2.1 / Puzzle object drag ok    
 2023-01-31 / v0.2.2 / Singleton, Gamemanager ok    
-2023-01-31 / v0.2.3 / Drag & Drop ok / Rotation X    
+2023-01-31 / v0.2.3 / Drag & Drop ok / Rotation X   
+    
+2023-03-08 / merge Test    
