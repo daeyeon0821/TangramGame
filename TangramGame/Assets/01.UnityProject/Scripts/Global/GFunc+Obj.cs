@@ -23,12 +23,12 @@ public static partial class GFunc
             else
             {
                 searchResult = FindChildObj(searchTarget, objName_);
+
+                // 规绢肺流
+                if (searchResult == null || searchResult == default) { /* Pass */ }
+                else { return searchResult; }
             }
         }       // loop
-
-        // 规绢肺流
-        if(searchResult == null || searchResult == default) { /* Pass */ }
-        else { return searchResult; }
 
         return searchResult;
     }       // FindChildObj()
